@@ -1,7 +1,9 @@
 
 <h1 align="center">Hi there, it's me, Jhonathan 👋</h1> 
 <h4 align="center">Sou um desenvolvedor pau pra toda obra, Frontend e backend :v:</h4>
-<img src="https://komarev.com/ghpvc/?username=jhonathan&color=5E33FF&style=plastic" alt="nhoelzl"/>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=jhonathan&color=5E33FF&style=plastic" alt="nhoelzl"/>
+</p>
 
 <h1 align="center">Here are some ideas to get you started:</h1>
 
