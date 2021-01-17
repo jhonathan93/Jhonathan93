@@ -1,4 +1,5 @@
 ### Hi there, it's me, Jhonathan 👋
+![](https://komarev.com/ghpvc/?username=jhonathan93&style=plastic&color=5E33FF)
 
 Sou uma Developer pau pra toda obra, Frontend e backend :v:
 
