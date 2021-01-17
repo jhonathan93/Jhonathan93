@@ -1,11 +1,9 @@
 
 <h1 align="center">Hi there, it's me, Jhonathan 👋</h1> 
 <h4 align="center">Sou um desenvolvedor pau pra toda obra, Frontend e backend :v:</h4>
-<p align="center">
+<p align="left">
   <img src="https://komarev.com/ghpvc/?username=jhonathan&color=5E33FF&style=plastic" alt="nhoelzl"/>
 </p>
-
-<h1 align="center">Here are some ideas to get you started:</h1>
 
 - 🔭 I’m currently working on [Mageuni](https://www.mageuni.com/)
 - 🌱 I’m currently learning [development in magento 2](https://github.com/jhonathan93/Magento2)
