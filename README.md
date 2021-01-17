@@ -32,3 +32,5 @@ Here are some ideas to get you started:
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> 
     </a> 
 </p>
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhonathan93&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
