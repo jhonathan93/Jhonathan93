@@ -1,7 +1,7 @@
-### Hi there, it's me, Jhonathan 👋
-![](https://komarev.com/ghpvc/?username=jhonathan93&style=plastic&color=5E33FF)
 
-Sou uma Developer pau pra toda obra, Frontend e backend :v:
+<h1 align="center">Hi there, it's me, Jhonathan 👋</h1> 
+
+<p align="center">Sou uma Developer pau pra toda obra, Frontend e backend :v:</p>
 
 Here are some ideas to get you started:
 
