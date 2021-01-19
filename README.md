@@ -2,7 +2,7 @@
 <h1 align="center">Hi there, it's me, Jhonathan 👋</h1> 
 <h4 align="center">Sou um desenvolvedor pau pra toda obra, Frontend e backend :v:</h4>
 <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=jhonathan93&color=5E33FF&style=plastic" alt="nhoelzl"/>
+  <img src="https://komarev.com/ghpvc/?username=jhonathan93&color=5E33FF&style=plastic" alt="jhonathan93"/>
 </p>
 
 - 🔭 I’m currently working on [Mageuni](https://www.mageuni.com/)
