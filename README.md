@@ -35,4 +35,4 @@
 </p>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhonathan93&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-[![Spotify](https://novatorem-phi-orcin.vercel.app/api/spotify)](https://open.spotify.com/user/22d73si4irb2tgyla7wseuqwy)
+[![Spotify](https://novatorem-phi-orcin.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/22d73si4irb2tgyla7wseuqwy)
