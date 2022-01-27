@@ -35,4 +35,4 @@
 </p>
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhonathan93&layout=compact&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
-[![Spotify](https://jhonathan93.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff)](https://open.spotify.com/user/22d73si4irb2tgyla7wseuqwy)
+[<img align="right" src="https://spotify-now-playing-js.vercel.app/api/spotify" alt="Sayak's Spotify Playing" width="350" />](https://open.spotify.com/user/22d73si4irb2tgyla7wseuqwy?si=39a3efd62af34cfe)
