@@ -8,7 +8,7 @@
   <img src="https://komarev.com/ghpvc/?username=jhonathan93&color=5E33FF&style=plastic" alt="jhonathan93"/>
 </p>
 
-- 🔭 I’m currently working on [Mageuni](https://www.mageuni.com/)
+- 🔭 I’m currently working on [Trezo](https://www.trezo.com.br/)
 - 🌱 I’m currently learning [development in magento 2](https://github.com/jhonathan93/Magento2)
 - 📫 How to reach me: [linkedin](https://www.linkedin.com/in/jhonathan-silva-367541171/)
 
