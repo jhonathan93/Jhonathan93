@@ -1,47 +1,254 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Real Glassmorphsim</title>
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <div class="content">
-        <h2>01</h2>
-        <h3>Card One</h3>
-        <p>Lorem ipsum dolo sit amet, consectetur adipisicing elit, send do eiusmod tempor incididunt ut labore et dolore magna alique.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <h2>02</h2>
-        <h3>Card Two</h3>
-        <p>Lorem ipsum dolo sit amet, consectetur adipisicing elit, send do eiusmod tempor incididunt ut labore et dolore magna alique.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-    <div class="card">
-      <div class="content">
-        <h2>03</h2>
-        <h3>Card Three</h3>
-        <p>Lorem ipsum dolo sit amet, consectetur adipisicing elit, send do eiusmod tempor incididunt ut labore et dolore magna alique.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-  <script>
-    VanillaTilt.init(document.querySelectorAll(".card"), {
-      max: 25,
-      speed: 400,
-      glare: true,
-      "max-glare": 1
-    });
-  </script>
-</body>
+<html>
+    <head>        
+        <title>Portfólio - Jhonathan</title>
+
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="videos/3130284-uhd_3840_2160_30fps.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="text-white text-center py-5">
+            <div class="container d-flex flex-row justify-content-center">
+                <div class="row">
+                    <div class="col-md-7 d-flex flex-column justify-content-center align-items-start mb-5">
+                        <h4 class="contentTitle mb-5">
+                            <span class="emoji">✌🏻</span>
+                            Olá, sou eu, Jhonathan
+                        </h4>
+                        
+                        <h1 class="mb-5">Sou desenvolvedor pau pra toda obra, <strong>Frontend</strong> && <strong>backend</strong> && apaixonado por Tecnologia</h1>
+
+                        <p class="text-justify">Desenvolvedor de sistemas pleno com sólida experiência no mercado de tecnologia, especializado em desenvolvimento web e back-end. Tenho atuado principalmente com PHP, JavaScript, HTML5, CSS, MySQL e JQuery, além de possuir conhecimentos avançados em frameworks e ferramentas como Bootstrap, API REST e Magento 2</p>
+                    </div>
+            
+                    <div class="col-md-5">
+                        <img class="dev"  src="imgs/123.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="text-white text-center py-5">
+            <div class="container">
+            <h2 class="text-center mb-4">Ferramentas</h2>
+
+            <div class="row justify-content-center">
+                <div class="card bg-dark text-white tooling-box p-3">
+                    <div class="box-content p-3">
+                        <div class="box-icon">
+                            <svg class="icone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="PHP" role="img" viewBox="0 0 512.00 512.00" width="256px" height="256px" fill="#ffffff" stroke="#1100ff">
+                                <g stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g> 
+                                        <rect width="512" height="512" fill="#1100ff"/> 
+                                        <g stroke="#ffffff" stroke-width="0.00512"> 
+                                        <path id="a" d="M155 202H97a3 3 0 0 0-3 2L67 345c0 3 3 3 3 3h30c3 0 3-2 3-2l7-35h27c42 0 63-28 68-53s1-56-50-56zm13 54c-4 19-17 27-35 27h-18l11-53h18c27 0 26 10 24 26z"/> 
+                                        <path d="M275 311c-4 0-3-4-3-4l12-61c0-8 6-16-18-15h-18l-15 78s0 3-4 3h-29c-3 0-3-3-3-3l28-141s0-2 4-2h30c3 0 2 3 2 3l-7 34h26c36 0 45 17 42 37l-13 69s0 3-5 3z"/> 
+                                        <use xlink:href="#a" x="239"/> 
+                                    </g> 
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="box-text">
+                            <p>PHP</p>
+                        </div>
+                    </div>
+
+                    <div class="box-content p-3">
+                        <div class="box-icon">
+                            <svg class="icone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="JS" role="img" viewBox="0 0 24 24" width="256px" height="256px" fill="#000000" stroke="#1100ff">
+                                <g stroke-linecap="round" stroke-linejoin="round"/>
+                                <g>
+                                    <g fill="none" fill-rule="evenodd"> 
+                                        <rect width="24" height="24" fill="#1100ff"/> 
+                                        <path stroke="#ffffff" stroke-width="2" d="M12,11 C12,15.749205 12,18.4158717 12,19 C12,19.8761925 11.4771235,21 10,21 C7.61461794,21 7.5,19 7.5,19 M20.7899648,13.51604 C20.1898831,12.5053467 19.3944074,12 18.4035378,12 C16.8563489,12 16,13 16,14 C16,15 16.5,16 18.5084196,16.5 C19.7864643,16.8181718 21,17.5 21,19 C21,20.5 19.6845401,21 18.5,21 C16.9861609,21 15.9861609,20.3333333 15.5,19"/>
+                                    </g> 
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="box-text">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+
+                    <div class="box-content p-3">
+                        <div class="box-icon">
+                            <svg class="icone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="MYSQL" role="img" viewBox="0 0 73 73" width="256px" height="256px" fill="#000000">
+                                <g stroke-linecap="round" stroke-linejoin="round"/>
+                                <g> 
+                                    <g id="databases-and-servers/databases/mysql" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="container" transform="translate(2.000000, 2.000000)" fill="#1100ff" fill-rule="nonzero" stroke="#1100ff" stroke-width="2">
+                                            <rect id="mask" x="-1" y="-1" width="71" height="71"></rect> 
+                                        </g> 
+                                        <g transform="translate(14.000000, 16.000000)" fill="#ffffff">
+                                            <g transform="translate(0.786008, 0.109629)" fill-rule="nonzero">
+                                                <path d="M40.8827605,33.7385756 C38.4614916,33.672937 36.6119538,33.8980714 35.0307983,34.5648866 C34.5814496,34.7544412 33.8649454,34.7593487 33.7916387,35.3224916 C34.0385504,35.5813655 34.0768908,35.9678361 34.2731933,36.2862143 C34.6507689,36.8972059 35.2881387,37.7158487 35.8568025,38.1452605 C36.4782227,38.6142395 37.1186597,39.1160378 37.7848613,39.5221387 C38.9697311,40.2447773 40.2926261,40.6573193 41.4336345,41.3811849 C42.1059706,41.8078361 42.7740126,42.3452143 43.4300924,42.8267689 C43.7542983,43.0647857 43.9723782,43.435 44.3938151,43.5840672 C44.3938151,43.5613697 44.3938151,43.5383655 44.3938151,43.5153613 C44.1723613,43.2334832 44.1153109,42.8457857 43.9119538,42.5513319 C43.6138193,42.2531975 43.3153782,41.9547563 43.016937,41.6563151 C42.1418571,40.4947563 41.0309076,39.4745966 39.8500252,38.6271218 C38.9083866,37.951105 36.8005882,37.0379916 36.4076765,35.9420714 C36.3846723,35.9190672 36.3619748,35.896063 36.3386639,35.8730588 C37.0063992,35.7979118 37.7882353,35.5562143 38.4044412,35.3911975 C39.4396303,35.1136134 40.3647059,35.1853866 41.4336345,34.9093361 C41.9154958,34.7716176 42.3973571,34.6335924 42.8795252,34.4961807 C42.8795252,34.4041639 42.8795252,34.3127605 42.8795252,34.2207437 C42.3390798,33.6661891 41.9538361,32.9325084 41.3646218,32.4307101 C39.8230336,31.117937 38.1403529,29.8063908 36.4076765,28.7127403 C35.4467143,28.1061655 34.259084,27.7119962 33.2407647,27.1979903 C32.8981555,27.0251521 32.2963655,26.9352824 32.0700042,26.6471471 C31.5350798,25.9650878 31.2436933,25.1006513 30.8311513,24.3062702 C29.9668067,22.6420849 29.118105,20.8245076 28.3525252,19.0737345 C27.8301765,17.8797857 27.4891008,16.702308 26.8379286,15.631171 C23.7118109,10.4914803 20.3467563,7.38919496 15.1340042,4.33994202 C14.024895,3.69146891 12.6894244,3.43535546 11.2781933,3.10078235 C10.5212017,3.05495798 9.76359664,3.00882689 9.00629832,2.96300252 C8.54406723,2.7697979 8.06312605,2.20426261 7.62942017,1.93020588 C5.90257143,0.839294496 1.47318908,-1.53361345 0.194155462,1.58603235 C-0.613445378,3.55516134 1.40110924,5.47668697 2.12160084,6.47442521 C2.62738655,7.17442773 3.27487815,7.9592084 3.63619748,8.74638151 C3.87390756,9.2637 3.9150084,9.78249076 4.11836555,10.3300214 C4.61893697,11.6785277 5.05417647,13.1456437 5.70166807,14.3920113 C6.02894118,15.0225412 6.38964706,15.6869025 6.80341597,16.2509042 C7.05707563,16.5968874 7.49170168,16.7493286 7.56040756,17.2837008 C7.13528992,17.8785895 7.11105882,18.8020395 6.87212185,19.5556878 C5.79613866,22.9485008 6.20193277,27.1656311 7.76713866,29.6766471 C8.24746639,30.4474412 9.37865966,32.1006765 10.9340504,31.4666807 C12.2946723,30.9124328 11.9907101,29.1950924 12.3799412,27.6799437 C12.4679706,27.3363529 12.4139874,27.0838588 12.5863655,26.8538168 C12.5863655,26.8765756 12.5863655,26.8996412 12.5863655,26.9227067 C12.999521,27.7488336 13.4126765,28.5749298 13.8258319,29.4009034 C14.7429328,30.8780798 16.3707101,32.4218151 17.750042,33.4634454 C18.4653193,34.003584 19.0284622,34.9375546 19.9532311,35.253479 C19.9532311,35.2304748 19.9532311,35.2077773 19.9532311,35.1844664 C19.9299202,35.1844664 19.9072227,35.1844664 19.8842185,35.1844664 C19.7050924,34.905042 19.4247479,34.7894076 19.1959328,34.5648866 C18.657021,34.0367101 18.0579916,33.3800168 17.6123235,32.7748529 C16.3578277,31.0716218 15.2490252,29.2073613 14.2389874,27.2668803 C13.7565126,26.3404244 13.3372227,25.3181176 12.9305084,24.3751601 C12.7737731,24.0115403 12.7756134,23.4618933 12.4489538,23.2735042 C12.0035924,23.9645197 11.3475126,24.5231538 11.003063,25.3390668 C10.4521891,26.6432517 10.3810294,28.2337622 10.1770588,29.8830714 C10.0562101,29.9263193 10.1098866,29.8965672 10.0390336,29.9517773 C9.08021849,29.7205084 8.74313025,28.7333828 8.38702521,27.8866134 C7.48556723,25.7449529 7.31809664,22.2964084 8.11128151,19.8312475 C8.31647899,19.1935403 9.2440084,17.1845681 8.86857983,16.5953845 C8.68945378,16.0073971 8.09809244,15.6674256 7.76713866,15.2181382 C7.35766387,14.6627861 6.94880252,13.9316206 6.66539076,13.2903248 C5.92772269,11.6204345 5.58327311,9.74592941 4.80665126,8.05806513 C4.43551681,7.2511084 3.80765546,6.43458193 3.29205462,5.71721891 C2.7212437,4.92256176 2.08203361,4.33724286 1.6397395,3.37606597 C1.48239076,3.0345916 1.26860504,2.48791975 1.50202101,2.13687563 C1.5762479,1.89993235 1.68084034,1.8011063 1.91517647,1.72381218 C2.31452941,1.41589634 3.42670588,1.82625756 3.84262185,1.9990958 C4.94682353,2.45767689 5.86821849,2.89438866 6.80341597,3.5138458 C7.25245798,3.81158151 7.70640756,4.38726933 8.249,4.54664244 C8.45542437,4.54664244 8.66215546,4.54664244 8.86857983,4.54664244 C9.83782353,4.76947647 10.9236218,4.61583908 11.8290672,4.89078529 C13.4295462,5.37724748 14.8637815,6.13387101 16.1664328,6.95637857 C20.1348109,9.46199622 23.3793235,13.0288437 25.5987689,17.2837008 C25.9557941,17.9687353 26.1103824,18.6226374 26.4247731,19.3492941 C27.0593824,20.8146311 27.8587017,22.3224798 28.489937,23.7554269 C29.1199454,25.1851227 29.7340042,26.6279769 30.6244202,27.8177235 C31.0927857,28.4431311 32.900916,28.7786244 33.7226261,29.1257731 C34.2986513,29.3693109 35.242437,29.6229706 35.7880966,29.9517773 C36.8303403,30.5805588 37.8400714,31.3289622 38.8175966,32.0175546 C39.3062059,32.3616975 40.8079202,33.116542 40.8827605,33.7385756 Z"></path> 
+                                            </g> 
+                                            <g transform="translate(9.654588, 7.607551)">
+                                                <path d="M1.23946639,0.00929369748 C0.73460084,5.20417043e-18 0.37757563,0.0644117647 0,0.146797479 C0,0.169832353 0,0.192897899 0,0.215687395 C0.0230042017,0.215687395 0.0460084034,0.215687395 0.069012605,0.215687395 C0.309789916,0.710492437 0.734907563,1.02890126 1.03273529,1.45515378 C1.26216387,1.93710714 1.49159244,2.4190605 1.72132773,2.90070714 C1.74402521,2.87791765 1.76733613,2.85488277 1.79003361,2.83209328 C2.21637815,2.5316584 2.4117605,2.05093193 2.40961345,1.31737395 C2.23876891,1.13763445 2.21361765,0.912101261 2.06547059,0.697610084 C1.86855462,0.411867227 1.48760504,0.249518908 1.23946639,0.00929369748 Z"></path> 
+                                            </g> 
+                                        </g> 
+                                    </g> 
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="box-text">
+                            <p>Mysql</p>
+                        </div>
+                    </div>
+
+                    <div class="box-content p-3">
+                        <div class="box-icon">
+                            <svg class="icone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="DOCKER" role="img" width="256px" height="256px" viewBox="0 0 73 73" fill="#000000">
+                                <g stroke-linecap="round" stroke-linejoin="round"/>
+                                <g> 
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> 
+                                        <g transform="translate(2.000000, 2.000000)" fill="#1100ff" fill-rule="nonzero" stroke="#1100ff" stroke-width="2"> 
+                                            <rect id="mask" x="-1" y="-1" width="71" height="71"></rect> 
+                                        </g> 
+
+                                        <g transform="translate(11.000000, 11.000000)" fill-rule="nonzero">
+                                            <path d="M51,25.5 C51,39.5832715 39.5832715,51 25.5,51 C11.4167285,51 0,39.5832715 0,25.5 C0,11.4167285 11.4167285,0 25.5,0 C38.4987246,0 49.2253594,9.72645703 50.8001836,22.2984551 C50.9146348,23.2070918 50.9812734,24.1302715 50.9958164,25.066002 C50.9990039,25.2106348 51,25.3553672 51,25.5 Z" fill="#1100ff"></path> 
+                                            <g transform="translate(5.378906, 10.060547)" fill="#ffffff">
+                                                <path d="M45.6169102,15.0054551 C43.4395488,17.6574551 39.1731797,17.4503672 39.1731797,17.4503672 C36.541998,28.7859141 20.6518125,34.5551895 9.61917773,31.7210039 C-1.41236133,28.8878145 0.1051875,15.7298145 0.1051875,15.7298145 L32.3923711,15.7298145 C35.0568223,15.7298145 35.2598262,14.9200898 35.2598262,14.9200898 C32.8981875,9.31945313 36.5420977,6.31672852 36.5420977,6.31672852 C39.3762832,6.82364063 40.0840078,11.6810918 40.0840078,11.6810918 C42.4101855,11.2637285 44.278459,11.7601816 45.4212773,12.2379082 C45.5357285,13.1465449 45.6023672,14.0697246 45.6169102,15.0054551 Z"></path> 
+                                                <rect id="Rectangle-path" x="3.54609375" y="10.6017246" width="4.52126953" height="4.11585938"></rect>
+                                                <rect id="Rectangle-path" x="9.22791211" y="10.6017246" width="4.52126953" height="4.11585938"></rect>
+                                                <rect id="Rectangle-path" x="26.2712754" y="10.6017246" width="4.52126953" height="4.11585938"></rect>
+                                                <rect id="Rectangle-path" x="20.5904531" y="10.6017246" width="4.52126953" height="4.11585938"></rect>
+                                                <rect id="Rectangle-path" x="20.5904531" y="0.0760019531" width="4.52126953" height="4.11585937"></rect>
+                                                <rect id="Rectangle-path" x="14.9086348" y="10.6017246" width="4.52126953" height="4.11585938"></rect>
+                                                <rect id="Rectangle-path" x="9.22791211" y="5.33836523" width="4.52126953" height="4.11585938"></rect>
+                                                <rect id="Rectangle-path" x="20.5904531" y="5.33836523" width="4.52126953" height="4.11585938"></rect>
+                                                <rect id="Rectangle-path" x="14.9086348" y="5.33836523" width="4.52126953" height="4.11585938"></rect> 
+                                            </g> 
+                                        </g> 
+                                    </g> 
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="box-text">
+                            <p>Docker</p>
+                        </div>
+                    </div>
+
+                    <div class="box-content p-3">
+                        <div class="box-icon">
+                            <svg class="icone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="DOCKER" role="img" width="256px" height="256px" width="256px" height="256px" viewBox="0 0 73 73" fill="#000000">
+                                <g stroke-linecap="round" stroke-linejoin="round"/>
+                                <g> 
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> 
+                                        <g transform="translate(2.000000, 2.000000)" fill-rule="nonzero"> 
+                                            <rect stroke="#1100ff" stroke-width="2" fill="#1100ff" x="-1" y="-1" width="71" height="71"></rect> 
+                                            <path d="M58.3067362,21.4281798 C55.895743,17.2972267 52.6253846,14.0267453 48.4948004,11.615998 C44.3636013,9.20512774 39.8535636,8 34.9614901,8 C30.0700314,8 25.5585181,9.20549662 21.4281798,11.615998 C17.2972267,14.0266224 14.0269912,17.2972267 11.615998,21.4281798 C9.20537366,25.5590099 8,30.0699084 8,34.9607523 C8,40.8357654 9.71405782,46.1187277 13.1430342,50.8109917 C16.5716416,55.5036246 21.0008949,58.7507436 26.4304251,60.5527176 C27.0624378,60.6700211 27.5302994,60.5875152 27.8345016,60.3072901 C28.1388268,60.0266961 28.290805,59.6752774 28.290805,59.2545094 C28.290805,59.1842994 28.2847799,58.5526556 28.2730988,57.3588401 C28.2610487,56.1650247 28.2553926,55.1235563 28.2553926,54.2349267 L27.4479164,54.3746089 C26.9330843,54.468919 26.2836113,54.5088809 25.4994975,54.4975686 C24.7157525,54.4866252 23.9021284,54.4044881 23.0597317,54.2517722 C22.2169661,54.1004088 21.4330982,53.749359 20.7075131,53.1993604 C19.982297,52.6493618 19.4674649,51.9294329 19.1631397,51.0406804 L18.8120898,50.2328353 C18.5780976,49.6950097 18.2097104,49.0975487 17.7064365,48.4426655 C17.2031625,47.7871675 16.6942324,47.3427912 16.1794003,47.108799 L15.9336039,46.9328437 C15.7698216,46.815909 15.6178435,46.6748743 15.4773006,46.511215 C15.3368806,46.3475556 15.2317501,46.1837734 15.1615401,46.0197452 C15.0912072,45.855594 15.1494901,45.7209532 15.3370036,45.6153308 C15.5245171,45.5097084 15.8633939,45.4584343 16.3551097,45.4584343 L17.0569635,45.5633189 C17.5250709,45.6571371 18.104088,45.9373622 18.7947525,46.4057156 C19.4850481,46.8737001 20.052507,47.4821045 20.4972521,48.230683 C21.0358155,49.1905062 21.6846737,49.9218703 22.4456711,50.4251443 C23.2060537,50.9284182 23.9727072,51.1796248 24.744894,51.1796248 C25.5170807,51.1796248 26.1840139,51.121096 26.7459396,51.0046532 C27.3072505,50.8875956 27.8338868,50.7116403 28.3256025,50.477771 C28.5362325,48.9090515 29.1097164,47.7039238 30.0455624,46.8615271 C28.7116959,46.721353 27.5124702,46.5102313 26.4472706,46.2295144 C25.3826858,45.9484285 24.2825656,45.4922482 23.1476478,44.8597436 C22.0121153,44.2280998 21.0701212,43.44374 20.3214198,42.5080169 C19.5725954,41.571802 18.9580429,40.3426971 18.4786232,38.821809 C17.9989575,37.300306 17.7590632,35.5451796 17.7590632,33.5559381 C17.7590632,30.7235621 18.6837199,28.3133066 20.5326645,26.3238191 C19.6665366,24.1944035 19.7483048,21.8072644 20.778215,19.1626478 C21.4569523,18.951772 22.4635002,19.1100211 23.7973667,19.6364115 C25.1314792,20.1630477 26.1082708,20.6141868 26.7287253,20.9882301 C27.3491798,21.3621504 27.8463057,21.6790175 28.2208409,21.9360032 C30.3978419,21.3277217 32.644438,21.0235195 34.9612442,21.0235195 C37.2780503,21.0235195 39.5251383,21.3277217 41.7022622,21.9360032 L43.0362517,21.0938524 C43.9484895,20.5319267 45.0257392,20.0169716 46.2654186,19.5488642 C47.5058357,19.0810026 48.4543466,18.9521409 49.1099676,19.1630167 C50.1627483,21.8077563 50.2565666,24.1947724 49.3901927,26.324188 C51.2390143,28.3136755 52.1640399,30.7245457 52.1640399,33.556307 C52.1640399,35.5455485 51.9232849,37.3062081 51.444357,38.8393922 C50.9648143,40.3728223 50.3449746,41.6006975 49.5845919,42.5256002 C48.8233486,43.4503799 47.8753296,44.2285916 46.7404118,44.8601125 C45.6052481,45.4921252 44.504759,45.9483056 43.4401742,46.2293914 C42.3750975,46.5104772 41.1758719,46.7217219 39.8420054,46.8621419 C41.0585683,47.9149226 41.6669728,49.5767225 41.6669728,51.846804 L41.6669728,59.2535257 C41.6669728,59.6742937 41.8132948,60.0255895 42.1061847,60.3063064 C42.3987058,60.5865315 42.8606653,60.6690374 43.492678,60.5516109 C48.922946,58.7498829 53.3521992,55.5026409 56.7806837,50.810008 C60.2087994,46.117744 61.923472,40.8347817 61.923472,34.9597686 C61.9222424,30.0695396 60.7162539,25.5590099 58.3067362,21.4281798 Z" fill="#FFFFFF"></path> 
+                                        </g> 
+                                    </g> 
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="box-text">
+                            <p>Github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="text-white text-center py-5">
+            <div class="container">
+                <h2 class="text-center">Meus Projetos</h2>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 1</h5>
+                                <p class="card-text">Descrição breve do projeto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 2</h5>
+                                <p class="card-text">Descrição breve do projeto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Projeto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 3</h5>
+                                <p class="card-text">Descrição breve do projeto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="text-white text-center py-5">
+            <div class="container">
+                <h2 class="text-center">Contato</h2>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Seu email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-3">
+            <p>&copy; 2025 Jhonathan. Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

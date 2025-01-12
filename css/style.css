@@ -1,112 +1,120 @@
-@import url(http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+*, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-shadow: border-box;
-  font-family: 'Poppins', sans-serif;
+.text-justify {
+    text-align: justify;
+}
+
+:root {
+    --text-color-primary: #1470e9;
+    --text-shadow: #1f2127;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #161623;
+    position: relative;
+    z-index: 1;
+
+    h1, h4, p {
+        font-family: "Roboto Mono", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2; 
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.02);
+        z-index: -1;
+    }
+    
+    header .container {
+        max-width: none !important;
+    
+        .contentTitle {
+            background: rgba(20, 34, 233, 0.157);
+            border-radius: 12px;
+            color: var(--text-color-primary);
+            font-weight: 900;
+            letter-spacing: .03em;
+            padding: .5rem 1rem;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+    
+            .emoji {
+                animation: pulse 1.5s infinite;
+                display: inline-block;
+            }
+        }
+
+        h1 {
+            text-align: start;
+
+            strong {
+                font-family: "Press Start 2P", serif;
+                color: var(--text-color-primary);
+                font-size: 1.1em;
+                text-shadow: 3px 3px 0 var(--text-shadow), -1px -1px 0 var(--text-shadow), 1px -1px 0 var(--text-shadow), -1px 1px 0 var(--text-shadow), 1px 1px 0 var(--text-shadow);
+            }
+        }
+
+        .dev {
+            max-height: 400px;
+            max-width: 800px;
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
 
-body:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#f00000, #f0f);
-  clip-path: circle(30% at right 70%);
+.tooling-box {
+    display: flex;
+    flex-direction: row;
 }
 
-body:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#2196f3, #e91e63);
-  clip-path: circle(20% at 10% 10%);
+.box-content {
+    align-items: center;
+    background: #021709;
+    border-radius: 8px;
+    display: flex;
+    flex: 0 1 18%;
+    height: 60px;
+    justify-content: space-evenly;
+    margin: 1%;
 }
 
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  flex-wrap: wrap;
-  z-index: 1;
+.icone {
+    height: 30px;
+    width: 30px;
 }
 
-.container .card {
-  position: relative;
-  width: 280px;
-  height: 400px;
-  margin: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-}
-
-.container .card .content {
-  padding: 20px;
-  text-align: center;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.container .card:hover .content {
-  transform: translateY(0px);
-  opacity: 1;
-} 
-
-.container .card .content h2 {
-  position: absolute;
-  top: -80px;
-  right: 30px;
-  font-size: 8em;
-  color: rgba(255, 255, 255, 0.05);
-  pointer-events: none;
-}
-
-.container .card .content h3 {
-  font-size: 1.8em;
-  color: #ffffff;
-  z-index: 1;
-}
-
-.container .card .content p {
-  font-size: 1em;
-  color: #ffffff;
-  font-weight: 300;
-}
-
-.container .card .content a {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  margin-top: 15px;
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
