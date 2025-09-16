@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jhonathan Silva - Desenvolvedor Backend especializado em PHP, Laravel e Magento 2. Portfolio com projetos e experiência profissional.">
+        <meta name="keywords" content="desenvolvedor php, laravel, magento, backend, portfolio, jhonathan silva">
 
-        <title>Portfólio - Jhonathan da Silva</title>
+        <title>Portfolio - Jhonathan da Silva</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,38 +14,93 @@
         
         <style>
             :root {
-                --bg-body: #0d1117;
-                --text-color: #fff;
-                --header-gradient: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-                --overlay: rgba(0,0,0,0.6);
-                --typewriter: #58a6ff;
-                --btn-bg: #58a6ff;
-                --btn-hover: #1f6feb;
-                --timeline-border: #58a6ff;
-                --timeline-dot: #58a6ff;
-                --skill-bg: #21262d;
-                --skill-color: #58a6ff;
-                --skill-hover-bg: #58a6ff;
-                --skill-hover-color: #fff;
-                --card-body-bg: #161b22;
-                --footer-bg: #161b22;
-                --social-icon: #58a6ff;
-                --social-hover: #1f6feb;
-                --progress-shadow: #58a6ff;
-                --glow-blue: #007bff;
-                --glow-red: #dc3545;
-                --glow-orange: #fd7e14;
-                --glow-yellow: #ffc107;
-                --glow-green: #28a745;
-                --glow-cyan: #17a2b8;
-                --glow-purple: #6f42c1;
+                --bg-body: #0b0b14;
+                --text-color: #e0e0ff;
+                
+                --primary-purple: #ffffff;
+                --secondary-purple: #ffffff;
+
+                --accent-blue: #1e40af;
+                --light-purple: #a78bfa;
+                --dark-purple: #2e1065;
+                
+                --header-overlay: linear-gradient(135deg, 
+                    rgba(79, 70, 229, 0.85) 0%, 
+                    rgba(109, 40, 217, 0.7) 50%, 
+                    rgba(30, 64, 175, 0.6) 100%);
+                
+                --card-gradient: linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.05) 0%, 
+                    rgba(255, 255, 255, 0.02) 100%);
+                
+                --glass-border: rgba(255, 255, 255, 0.08);
+                
+                --glow-shadow: 0 8px 32px rgba(79, 70, 229, 0.25);
+                --soft-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+                --text-glow: 0 0 20px rgba(167, 139, 250, 0.4);
+                
+                --skill-bg: rgba(255, 255, 255, 0.05);
+                --skill-hover: rgba(79, 70, 229, 0.7);
+
+                --timeline-line: var(--primary-purple);
+                --timeline-dot: var(--secondary-purple);
             }
 
+
+            * {
+                box-sizing: border-box;
+            }
+
+            html {
+                overflow-x: hidden;
+            }
+            
             body {
                 font-family: 'Poppins', sans-serif;
-                background-color: var(--bg-body);
+                background: var(--bg-body);
                 color: var(--text-color);
                 scroll-behavior: smooth;
+                line-height: 1.6;
+                background-image: url('herobg-ecbfddc8.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                overflow: hidden;
+                position: relative;
+            }
+
+            body::after {
+                content: "";
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-image: 
+                    radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.3), transparent),
+                    radial-gradient(2px 2px at 40px 70px, rgba(199, 210, 254, 0.4), transparent),
+                    radial-gradient(1px 1px at 90px 40px, rgba(139, 92, 246, 0.5), transparent),
+                    radial-gradient(1px 1px at 130px 80px, rgba(99, 102, 241, 0.3), transparent),
+                    radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,0.2), transparent);
+                background-repeat: repeat;
+                background-size: 100px 100px;
+                animation: floatingParticles 50s ease-in-out infinite;
+                z-index: 0;
+                pointer-events: none;
+                opacity: 0.7;
+            }
+
+            @keyframes floatingParticles {
+                0%   { transform: translateY(0) translateX(0) rotate(0deg) scale(1); }
+                12%  { transform: translateY(-15px) translateX(12px) rotate(30deg) scale(1.1); }
+                25%  { transform: translateY(-35px) translateX(-8px) rotate(90deg) scale(0.9); }
+                37%  { transform: translateY(-25px) translateX(18px) rotate(150deg) scale(1.2); }
+                50%  { transform: translateY(-50px) translateX(-15px) rotate(210deg) scale(1); }
+                62%  { transform: translateY(-30px) translateX(22px) rotate(270deg) scale(0.8); }
+                75%  { transform: translateY(-45px) translateX(-10px) rotate(330deg) scale(1.1); }
+                87%  { transform: translateY(-20px) translateX(15px) rotate(30deg) scale(0.95); }
+                100% { transform: translateY(-40px) translateX(5px) rotate(90deg) scale(1); }
             }
 
             header {
@@ -53,36 +110,37 @@
                 justify-content: center;
                 text-align: center;
                 position: relative;
-                background: var(--header-gradient);
-                overflow: hidden;
-            }
-
-            header::after {
-                content: "";
-                position: absolute;
-                top:0; left:0;
-                width:100%; height:100%;
-                background: var(--overlay);
             }
 
             header .content {
                 position: relative;
                 z-index: 2;
+                max-width: 800px;
+                padding: 0 20px;
             }
 
             header h1 {
                 font-weight: 700;
-                font-size: 3rem;
+                font-size: clamp(2rem, 5vw, 3.5rem);
+                margin-bottom: 1.5rem;
+                text-shadow: 2px 2px 20px rgba(99, 102, 241, 0.6);
+                background: linear-gradient(135deg, #ffffff 0%, var(--light-purple) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
 
             .typewriter {
-                color: var(--typewriter);
-                font-weight: bold;
-                border-right: .15em solid var(--typewriter);
+                color: var(--light-purple);
+                font-weight: 600;
+                font-size: clamp(1rem, 3vw, 1.3rem);
+                text-shadow: var(--text-glow);
+                border-right: .15em solid var(--light-purple);
                 white-space: nowrap;
                 overflow: hidden;
                 display: inline-block;
                 animation: typing 4s steps(30, end) infinite alternate, blink .75s step-end infinite;
+                margin-bottom: 2rem;
             }
 
             @keyframes typing {
@@ -95,46 +153,75 @@
             }
 
             .btn-custom {
-                background: var(--btn-bg);
-                color: var(--text-color);
+                background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
+                color: white;
                 font-weight: 600;
-                margin: 10px;
-                padding: 12px 25px;
-                border-radius: 30px;
-                transition: all .3s;
+                margin: 8px;
+                padding: 14px 28px;
+                border-radius: 50px;
+                border: 1px solid var(--glass-border);
+                backdrop-filter: blur(10px);
+                box-shadow: var(--glow-shadow);
+                transition: all 0.4s ease;
+                text-decoration: none;
+                display: inline-block;
             }
 
             .btn-custom:hover {
-                background: var(--btn-hover);
-                transform: scale(1.05);
+                background: linear-gradient(135deg, var(--secondary-purple), var(--dark-purple));
+                transform: translateY(-2px) scale(1.05);
+                box-shadow: 0 12px 40px rgba(99, 102, 241, 0.4);
+                color: white;
             }
 
             section {
-                padding: 80px 0;
+                padding: 100px 0;
+                position: relative;
             }
 
             h2 {
                 font-weight: 700;
-                margin-bottom: 40px;
+                margin-bottom: 3rem;
+                font-size: clamp(1.8rem, 4vw, 2.5rem);
+                background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .glass-card {
+                background: var(--card-gradient);
+                backdrop-filter: blur(20px);
+                border: 1px solid var(--glass-border);
+                border-radius: 20px;
+                box-shadow: var(--soft-shadow);
+                transition: all 0.4s ease;
+                overflow: hidden;
+            }
+
+            .glass-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+                border-color: rgba(255, 255, 255, 0.25);
             }
 
             .timeline-adv {
                 position: relative;
                 margin: 50px 0;
-                padding: 20px 0;
+                padding: 40px 0;
             }
 
             .timeline-line {
-                content: "";
                 position: absolute;
                 left: 50%;
                 top: 0;
                 height: 0;
                 width: 4px;
-                background: var(--timeline-border);
-                box-shadow: 0 0 15px var(--timeline-border);
+                background: linear-gradient(180deg, var(--primary-purple), var(--secondary-purple));
+                box-shadow: 0 0 20px var(--timeline-line);
                 transform: translateX(-50%);
-                transition: height 0.3s ease-out;
+                transition: height 0.5s ease-out;
+                border-radius: 10px;
             }
 
             .timeline-item {
@@ -143,7 +230,7 @@
                 padding: 20px 40px;
                 opacity: 0;
                 transform: translateY(50px);
-                transition: all 0.6s ease-out;
+                transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             }
 
             .timeline-item.active {
@@ -164,303 +251,426 @@
             .timeline-item::before {
                 content: "";
                 position: absolute;
-                top: 20px;
-                width: 20px;
-                height: 20px;
-                background: var(--timeline-dot);
+                top: 30px;
+                width: 24px;
+                height: 24px;
+                background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
                 border-radius: 50%;
-                box-shadow: 0 0 20px var(--timeline-dot);
+                box-shadow: 0 0 25px var(--timeline-dot), 0 0 0 4px rgba(255,255,255,0.1);
+                z-index: 2;
             }
 
             .timeline-item.left::before {
-                right: -10px;
+                right: -12px;
             }
 
             .timeline-item.right::before {
-                left: -10px;
+                left: -12px;
             }
 
             .timeline-content {
-                background: var(--card-body-bg);
-                padding: 20px;
-                border-radius: 12px;
-                box-shadow: 0 0 10px rgba(0,0,0,0.5);
-                color: var(--text-color);
+                background: var(--card-gradient);
+                backdrop-filter: blur(20px);
+                border: 1px solid var(--glass-border);
+                padding: 25px;
+                border-radius: 16px;
+                box-shadow: var(--soft-shadow);
+                transition: all 0.4s ease;
+            }
+
+            .timeline-content:hover {
+                transform: scale(1.02);
+                box-shadow: 0 15px 40px rgba(99, 102, 241, 0.2);
             }
 
             .timeline-content .company {
                 font-weight: 700;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
+                color: var(--light-purple);
+                margin-bottom: 8px;
             }
 
             .timeline-content .date {
-                font-size: 0.85rem;
-                color: var(--timeline-dot);
-                margin-bottom: 8px;
+                font-size: 0.9rem;
+                color: var(--secondary-purple);
+                margin-bottom: 12px;
                 display: block;
+                font-weight: 500;
             }
 
             .timeline-content .role {
                 font-style: italic;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
+                color: rgba(255,255,255,0.9);
             }
             
             .badges .badge {
-                margin: 3px;
+                margin: 4px 6px 4px 0;
                 font-size: 0.8rem;
-                padding: 6px 10px;
-                border-radius: 8px;
-                box-shadow: 0 0 8px rgba(0,0,0,0.3);
-                transition: transform 0.3s;
+                padding: 8px 14px;
+                border-radius: 20px;
+                background: rgba(255,255,255,0.1);
+                color: white;
+                border: 1px solid rgba(255,255,255,0.2);
+                transition: all 0.3s ease;
+                backdrop-filter: blur(10px);
             }
             
             .badges .badge:hover {
                 transform: scale(1.1);
+                background: var(--primary-purple);
+                box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
             }
 
-            .skill-badge {
-                background: var(--skill-bg);
-                color: var(--skill-color);
-                padding: 10px 18px;
-                margin: 8px;
-                border-radius: 8px;
+            .skill-item {
+                margin-bottom: 2rem;
+                padding: 0 10px;
+            }
+
+            .skill-label {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
                 font-weight: 500;
-                display: inline-block;
-                transition: all .3s;
             }
 
-            .skill-badge:hover {
-                background: var(--skill-hover-bg);
-                color: var(--skill-hover-color);
-                transform: scale(1.1);
+            .skill-label img {
+                margin-right: 8px;
+                filter: drop-shadow(0 0 5px rgba(99, 102, 241, 0.5));
+            }
+
+            .progress {
+                height: 8px;
+                background: rgba(255,255,255,0.1);
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+            }
+
+            .progress-bar {
+                background: linear-gradient(90deg, var(--primary-purple), var(--secondary-purple));
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
+                transition: width 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .progress-bar::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+                animation: shimmer 2s infinite;
+            }
+
+            @keyframes shimmer {
+                0% { left: -100%; }
+                100% { left: 100%; }
             }
 
             .card {
                 border: none;
-                border-radius: 15px;
+                border-radius: 20px;
                 overflow: hidden;
-                position: relative;
-                transition: all .4s;
+                background: var(--card-gradient);
+                backdrop-filter: blur(20px);
+                border: 1px solid var(--glass-border);
+                transition: all 0.4s ease;
+                height: 100%;
+            }
+
+            .card:hover {
+                transform: translateY(-10px) scale(1.02);
+                box-shadow: 0 25px 60px rgba(99, 102, 241, 0.3);
             }
 
             .card img {
-                transition: all .4s;
-                filter: grayscale(100%);
+                transition: all 0.4s ease;
+                filter: grayscale(20%) brightness(0.9);
+                background: white;
+                padding: 20px;
             }
 
             .card:hover img {
-                filter: grayscale(0%);
+                filter: grayscale(0%) brightness(1);
                 transform: scale(1.05);
             }
 
             .card-body {
-                background: var(--card-body-bg);
+                background: transparent;
+                padding: 25px;
             }
 
-            footer {
-                background: var(--footer-bg);
-                padding: 20px;
+            .card-body h5 {
+                color: var(--light-purple);
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            .social-icons {
+                margin-top: 2rem;
             }
 
             .social-icons a {
-                color: var(--social-icon);
-                margin: 0 10px;
-                font-size: 1.5rem;
-                transition: all .3s;
+                color: var(--light-purple);
+                margin: 0 15px;
+                font-size: 2rem;
+                transition: all 0.4s ease;
+                display: inline-block;
+                text-shadow: var(--text-glow);
             }
 
             .social-icons a:hover {
-                color: var(--social-hover);
-                transform: translateY(-3px);
+                color: white;
+                transform: translateY(-5px) scale(1.2);
+                text-shadow: 0 0 25px var(--primary-purple);
             }
 
-            .progress-bar {
-                transition: width 2s ease-in-out;
-                box-shadow: 0 0 10px var(--progress-shadow);
+            footer {
+                backdrop-filter: blur(20px);
+                border-top: 1px solid var(--glass-border);
+                padding: 30px 20px;
+                text-align: center;
             }
 
-            .glow-blue   { background: var(--glow-blue); box-shadow: 0 0 15px var(--glow-blue); }
-            .glow-red    { background: var(--glow-red); box-shadow: 0 0 15px var(--glow-red); }
-            .glow-orange { background: var(--glow-orange); box-shadow: 0 0 15px var(--glow-orange); }
-            .glow-yellow { background: var(--glow-yellow); box-shadow: 0 0 15px var(--glow-yellow); }
-            .glow-green  { background: var(--glow-green); box-shadow: 0 0 15px var(--glow-green); }
-            .glow-cyan   { background: var(--glow-cyan); box-shadow: 0 0 15px var(--glow-cyan); }
-            .glow-purple { background: var(--glow-purple); box-shadow: 0 0 15px var(--glow-purple); }
+            @media (max-width: 768px) {
+                .timeline-item {
+                    width: 100%;
+                    left: 0 !important;
+                    text-align: center;
+                    padding: 20px;
+                }
+                
+                .timeline-item::before {
+                    left: 50% !important;
+                    right: auto !important;
+                    transform: translateX(-50%);
+                }
+                
+                .timeline-line {
+                    left: 50%;
+                }
+                
+                header h1 {
+                    font-size: 2rem;
+                }
+                
+                .typewriter {
+                    font-size: 1rem;
+                }
+            }
+
+            .fade-in {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s ease;
+            }
+
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
         </style>
     </head>
 
     <body>
         <header id="home">
             <div class="content text-center">
-                <h1 data-aos="fade-up">Olá, eu sou <span class="text-primary">Jhonathan da Silva</span></h1>
-                <p class="mt-3 typewriter">Desenvolvedor Backend | PHP • Laravel • Magento</p>
-                <div class="mt-4">
-                    <a href="#projects" class="btn btn-custom">Ver Projetos</a>
-                    <a href="Jhonathan_CV.pdf" target="_blank" class="btn btn-custom">Download CV</a>
-                </div>
-                <div class="social-icons mt-4">
-                    <a href="mailto:jhonathan93.dev@gmail.com">📧</a>
-                    <a href="https://github.com/" target="_blank">🐙</a>
-                    <a href="https://linkedin.com/in/" target="_blank">💼</a>
-                </div>
+                <h1 data-aos="fade-up" data-aos-duration="1000">Olá, eu sou <span>Jhonathan da Silva</span></h1>
+
+                <p class="typewriter">Desenvolvedor Backend | PHP • Laravel • Magento</p>
             </div>
         </header>
 
-        <section id="about" class="bg-dark text-center">
-            <div class="container" data-aos="fade-up">
-                <h2>Sobre Mim</h2>
-                <p class="lead">
-                    Desenvolvedor de sistemas Pleno com sólida experiência no mercado de tecnologia, especializado em
-                    desenvolvimento web full stack. Tenho domínio em PHP, JavaScript, Node.js e MySQL, com experiência prática
-                    em Laravel, Bootstrap, Magento 2 e na construção de APIs REST.
-                </p>
-                <p>
-                    Conhecimento em arquitetura MVC, princípios SOLID e refatoração de sistemas legados,
-                    sempre buscando soluções robustas, escaláveis e alinhadas às melhores práticas de engenharia de software.
-                </p>
+        <section id="about" class="text-center">
+            <div class="container">
+                <div class="glass-card p-5" data-aos="zoom-in">
+                    <h2>Sobre Mim</h2>
+                    <p class="lead mb-4">
+                        Desenvolvedor de sistemas Pleno com sólida experiência no mercado de tecnologia, especializado em
+                        desenvolvimento web full stack. Tenho domínio em PHP, JavaScript, Node.js e MySQL, com experiência prática
+                        em Laravel, Bootstrap, Magento 2 e na construção de APIs REST.
+                    </p>
+                    <p class="mb-0">
+                        Conhecimento em arquitetura MVC, princípios SOLID e refatoração de sistemas legados,
+                        sempre buscando soluções robustas, escaláveis e alinhadas às melhores práticas de engenharia de software.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section id="experience">
-    <div class="container">
-        <h2 class="text-center" data-aos="fade-up">Experiência Profissional</h2>
-        <div class="timeline-adv">
-            <div class="timeline-line"></div>
-            <div class="timeline-item left" data-date="Out 2023 – Mai 2025">
-                <div class="timeline-content">
-                    <h5 class="company">OrthoDontic</h5>
-                    <span class="date">Out 2023 – Mai 2025</span>
-                    <p class="role">Desenvolvedor de Sistemas Pleno</p>
-                    <p>Refatoração de sistemas em PHP, desenvolvimento de API em PHP 8/Laravel e liderança no frontend.</p>
-                    <div class="badges">
-                        <span class="badge bg-primary">PHP 8</span>
-                        <span class="badge bg-danger">Laravel</span>
-                        <span class="badge bg-info">API REST</span>
+            <div class="container">
+                <h2 class="text-center" data-aos="fade-up">Experiência Profissional</h2>
+                <div class="timeline-adv">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h5 class="company">OrthoDontic</h5>
+                            <span class="date">Out 2023 — Mai 2025</span>
+                            <p class="role">Desenvolvedor de Sistemas Pleno</p>
+                            <p>Refatoração de sistemas em PHP, desenvolvimento de API em PHP 8/Laravel e liderança no frontend.</p>
+                            <div class="badges">
+                                <span class="badge">PHP 8</span>
+                                <span class="badge">Laravel</span>
+                                <span class="badge">API REST</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="timeline-item right" data-date="Nov 2021 – Mai 2023">
-                <div class="timeline-content">
-                    <h5 class="company">TREZO</h5>
-                    <span class="date">Nov 2021 – Mai 2023</span>
-                    <p class="role">Programador Backend Pleno</p>
-                    <p>Desenvolvimento em Magento 2, integrações via APIs REST/SOAP, otimização SQL e Redis.</p>
-                    <div class="badges">
-                        <span class="badge bg-warning text-dark">Magento 2</span>
-                        <span class="badge bg-secondary">Redis</span>
-                        <span class="badge bg-success">MySQL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item left" data-date="Mai 2019 – Nov 2021">
-                <div class="timeline-content">
-                    <h5 class="company">MageUni</h5>
-                    <span class="date">Mai 2019 – Nov 2021</span>
-                    <p class="role">Programador Full Stack Pleno</p>
-                    <p>Desenvolvimento de soluções completas em Magento 2, PHP, Node.js, CSS e Bootstrap.</p>
-                    <div class="badges">
-                        <span class="badge bg-success">Node.js</span>
-                        <span class="badge bg-info">Bootstrap</span>
-                        <span class="badge bg-primary">PHP</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-        <section id="skills" class="bg-dark text-center">
-            <div class="container" data-aos="zoom-in">
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h5 class="company">TREZO</h5>
+                            <span class="date">Nov 2021 — Mai 2023</span>
+                            <p class="role">Programador Backend Pleno</p>
+                            <p>Desenvolvimento em Magento 2, integrações via APIs REST/SOAP, otimização SQL e Redis.</p>
+                            <div class="badges">
+                                <span class="badge">Magento 2</span>
+                                <span class="badge">Redis</span>
+                                <span class="badge">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h5 class="company">MageUni</h5>
+                            <span class="date">Mai 2019 — Nov 2021</span>
+                            <p class="role">Programador Full Stack Pleno</p>
+                            <p>Desenvolvimento de soluções completas em Magento 2, PHP, Node.js, CSS e Bootstrap.</p>
+                            <div class="badges">
+                                <span class="badge">Node.js</span>
+                                <span class="badge">Bootstrap</span>
+                                <span class="badge">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="text-center">
+            <div class="container">
+                <div class="glass-card p-5" data-aos="zoom-in">
                 <h2>Habilidades</h2>
-                <div class="row justify-content-center">
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="24"/> PHP
-                        <span class="percent" data-target="95">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-blue progress-animate" role="progressbar" data-target="95" style="width: 0%"></div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="24"/> PHP
+                                    </span>
+                                    <span class="percent" data-target="95">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="95" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" width="24"/> Laravel
-                        <span class="percent" data-target="85">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-red progress-animate" role="progressbar" data-target="85" style="width: 0%"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" width="24"/> Laravel
+                                    </span>
+                                    <span class="percent" data-target="85">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="85" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg" width="24"/> Magento 2
-                        <span class="percent" data-target="80">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-orange progress-animate" role="progressbar" data-target="80" style="width: 0%"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg" width="24"/> Magento 2
+                                    </span>
+                                    <span class="percent" data-target="80">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="80" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24"/> JavaScript
-                        <span class="percent" data-target="90">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-yellow progress-animate" role="progressbar" data-target="90" style="width: 0%"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24"/> JavaScript
+                                    </span>
+                                    <span class="percent" data-target="90">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="90" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="24"/> Node.js
-                        <span class="percent" data-target="75">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-green progress-animate" role="progressbar" data-target="75" style="width: 0%"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="24"/> Node.js
+                                    </span>
+                                    <span class="percent" data-target="75">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="75" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="24"/> MySQL
-                        <span class="percent" data-target="85">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-blue progress-animate" role="progressbar" data-target="85" style="width: 0%"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="24"/> MySQL
+                                    </span>
+                                    <span class="percent" data-target="85">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="85" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> Docker
-                        <span class="percent" data-target="70">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-cyan progress-animate" role="progressbar" data-target="70" style="width: 0%"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="24"/> Docker
+                                    </span>
+                                    <span class="percent" data-target="70">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="70" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        ⚙️ SOLID
-                        <span class="percent" data-target="90">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-purple progress-animate" role="progressbar" data-target="90" style="width: 0%"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>⚙️ SOLID</span>
+                                    <span class="percent" data-target="90">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="90" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        📐 MVC
-                        <span class="percent" data-target="90">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-green progress-animate" role="progressbar" data-target="90" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4 text-start">
-                        <span>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="24"/> Git
-                        <span class="percent" data-target="85">0%</span>
-                        </span>
-                        <div class="progress bg-secondary rounded-pill" style="height: 20px;">
-                        <div class="progress-bar glow-orange progress-animate" role="progressbar" data-target="85" style="width: 0%"></div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="skill-item">
+                                <div class="skill-label">
+                                    <span>🏗 MVC</span>
+                                    <span class="percent" data-target="90">0%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-animate" role="progressbar" data-target="90" style="width: 0%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -470,24 +680,26 @@
         <section id="projects">
             <div class="container">
                 <h2 class="text-center" data-aos="fade-up">Projetos</h2>
-                <div class="row g-4">
-                    <div class="col-md-6" data-aos="flip-left">
-                        <div class="card h-100 text-dark">
-                            <img src="https://www.personalarte.com.br/static/version1734551207/frontend/Codazon/unlimited_parte/pt_BR/images/logo/logo_oficial.svg" class="card-img-top p-4" alt="Personal Arte">
-                            <div class="card-body text-white">
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-5" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card h-100">
+                            <img src="https://www.personalarte.com.br/static/version1734551207/frontend/Codazon/unlimited_parte/pt_BR/images/logo/logo_oficial.svg" class="card-img-top" alt="Personal Arte">
+                            <div class="card-body">
                                 <h5>Personal Arte</h5>
-                                <p>Plataforma e-commerce desenvolvida em Magento 2.</p>
-                                <a href="https://www.personalarte.com.br/" target="_blank" class="btn btn-sm btn-custom">Ver Projeto</a>
+                                <p class="mb-3">Plataforma e-commerce completa desenvolvida em Magento 2 com customizações avançadas e integração com sistemas de pagamento.</p>
+                                <a href="https://www.personalarte.com.br/" target="_blank" class="btn btn-custom btn-sm">Ver Projeto</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6" data-aos="flip-left">
-                        <div class="card h-100 text-dark">
-                            <img src="https://cyberrock.com.br/static/version1729086640/frontend/Codazon/unlimited_cyberrock/pt_BR/images/CyberRock.svg" class="card-img-top p-4" alt="CyberRock">
-                            <div class="card-body text-white">
+
+                    <div class="col-md-6 col-lg-5" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card h-100">
+                            <img src="https://cyberrock.com.br/static/version1729086640/frontend/Codazon/unlimited_cyberrock/pt_BR/images/CyberRock.svg" class="card-img-top" alt="CyberRock">
+                            <div class="card-body">
                                 <h5>CyberRock</h5>
-                                <p>Loja virtual customizada em Magento 2.</p>
-                                <a href="https://cyberrock.com.br/" target="_blank" class="btn btn-sm btn-custom">Ver Projeto</a>
+                                <p class="mb-3">Loja virtual especializada desenvolvida em Magento 2 com interface moderna e funcionalidades customizadas para o setor.</p>
+                                <a href="https://cyberrock.com.br/" target="_blank" class="btn btn-custom btn-sm">Ver Projeto</a>
                             </div>  
                         </div>
                     </div>
@@ -495,29 +707,46 @@
             </div>
         </section>
 
-        <section id="contact" class="text-center bg-dark">
-            <div class="container" data-aos="fade-up">
-                <h2>Contato</h2>
-                <p>📍 Londrina - PR</p>
-                <p>📧 <a href="mailto:jhonathan93.dev@gmail.com" class="text-decoration-none text-primary">jhonathan93.dev@gmail.com</a></p>
-                <p>📱 <a href="tel:+5543996845708" class="text-decoration-none text-primary">(43) 9 9684-5708</a></p>
+        <section id="contact" class="text-center">
+            <div class="container">
+                <div class="glass-card p-5" data-aos="zoom-in">
+                    <h2>Contato</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <p class="lead mb-4">Vamos conversar sobre seu próximo projeto!</p>
+                            <p class="mb-2">📍 <strong>Londrina - PR</strong></p>
+                            <p class="mb-2">📧 <a href="mailto:jhonathan93.dev@gmail.com" class="text-decoration-none" style="color: var(--light-purple);">jhonathan93.dev@gmail.com</a></p>
+                            <p class="mb-0">📱 <a href="tel:+5543996845708" class="text-decoration-none" style="color: var(--light-purple);">(43) 9 9684-5708</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer class="text-center">
-            <p>&copy; 2025 Jhonathan da Silva. Todos os direitos reservados.</p>
+        <footer>
+            <div class="container">
+                <p class="mb-0">&copy; 2025 Jhonathan da Silva. Todos os direitos reservados.</p>
+            </div>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
         <script>
-            AOS.init({ duration: 1000, once: true });
+            AOS.init({ 
+                duration: 1000, 
+                once: true,
+                offset: 100,
+                easing: 'ease-out-cubic'
+            });
 
             document.addEventListener("DOMContentLoaded", function () {
                 const progressBars = document.querySelectorAll(".progress-animate");
                 const percents = document.querySelectorAll(".percent");
                 const skillsSection = document.querySelector("#skills");
+                const items = document.querySelectorAll(".timeline-item");
+                const timelineLine = document.querySelector(".timeline-line");
+                const experienceSection = document.querySelector("#experience");
                 let skillsTriggered = false;
 
                 function animateBars() {
@@ -525,58 +754,111 @@
                         const target = +bar.getAttribute("data-target");
                         const percentEl = percents[index];
                         let width = 0;
+                        
                         const fill = setInterval(() => {
                             if (width >= target) {
                                 clearInterval(fill);
                             } else {
-                                width++;
+                                width += Math.ceil(target / 100);
+                                if (width > target) width = target;
                                 bar.style.width = width + "%";
                                 percentEl.textContent = width + "%";
                             }
-                        }, 15);
+                        }, 20);
                     });
                 }
 
-                const items = document.querySelectorAll(".timeline-item");
-                const timelineLine = document.querySelector(".timeline-line");
-                const experienceSection = document.querySelector("#experience");
-
                 function animateTimeline() {
                     const sectionTop = experienceSection.offsetTop;
+                    const sectionHeight = experienceSection.offsetHeight;
                     const scrollTop = window.scrollY + window.innerHeight;
-                    const lastItem = items[items.length - 1];
-                    const lastItemOffset = lastItem.offsetTop;
-                    const maxHeight = lastItemOffset + lastItem.offsetHeight / 2;
-                    const lineHeight = Math.min(scrollTop - sectionTop, maxHeight);
-                    if (lineHeight > 0) {
-                        timelineLine.style.height = lineHeight + "px";
+                    
+                    if (items.length > 0) {
+                        const lastItem = items[items.length - 1];
+                        const lastItemOffset = lastItem.offsetTop + sectionTop;
+                        const maxHeight = lastItemOffset + lastItem.offsetHeight / 2 - sectionTop;
+                        const lineHeight = Math.max(0, Math.min(scrollTop - sectionTop - 100, maxHeight));
+
+                        if (lineHeight > 0) {
+                            timelineLine.style.height = lineHeight + "px";
+                        }
+
+                        items.forEach((item, index) => {
+                            const itemTop = sectionTop + item.offsetTop;
+                            const delay = index * 200;
+                            
+                            if (scrollTop > itemTop + 100) {
+                                setTimeout(() => {
+                                    item.classList.add("active");
+                                }, delay);
+                            }
+                        });
                     }
-                    items.forEach(item => {
-                        const itemTop = sectionTop + item.offsetTop;
-                        if (scrollTop > itemTop + 100) {
-                            item.classList.add("active");
+                }
+
+                function handleFadeIn() {
+                    const fadeElements = document.querySelectorAll('.fade-in');
+                    fadeElements.forEach(el => {
+                        const elementTop = el.getBoundingClientRect().top;
+                        const elementVisible = 150;
+                        
+                        if (elementTop < window.innerHeight - elementVisible) {
+                            el.classList.add('visible');
                         }
                     });
                 }
 
                 let scrollTimeout;
-                window.addEventListener("scroll", () => {
-                    if (scrollTimeout) return;
-                    scrollTimeout = setTimeout(() => {
-                        if (!skillsTriggered && window.scrollY + window.innerHeight > skillsSection.offsetTop + 100) {
-                            animateBars();
-                            skillsTriggered = true;
-                        }
-                        animateTimeline();
-                        scrollTimeout = null;
-                    }, 50);
-                });
+                let isScrolling = false;
+
+                function handleScroll() {
+                    if (!isScrolling) {
+                        requestAnimationFrame(() => {
+                            if (!skillsTriggered && window.scrollY + window.innerHeight > skillsSection.offsetTop + 100) {
+                                animateBars();
+                                skillsTriggered = true;
+                            }
+
+                            animateTimeline();
+                            handleFadeIn();
+                            
+                            isScrolling = false;
+                        });
+
+                        isScrolling = true;
+                    }
+                }
+
+                window.addEventListener("scroll", handleScroll, { passive: true });
 
                 if (window.scrollY + window.innerHeight > skillsSection.offsetTop + 100) {
                     animateBars();
                     skillsTriggered = true;
                 }
+                
                 animateTimeline();
+                handleFadeIn();
+
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            const offsetTop = target.offsetTop - 80;
+
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+
+                const elementsToAnimate = document.querySelectorAll('.glass-card, .card, .skill-item');
+
+                elementsToAnimate.forEach(el => {
+                    el.classList.add('fade-in');
+                });
             });
         </script>
     </body>
