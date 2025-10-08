@@ -2,8 +2,6 @@
 <h1 align="center">Hi there, it's me, Jhonathan 👋</h1> 
 <h4 align="center">Sou desenvolvedor pau pra toda obra, Frontend e backend :v:</h4>
 
-[<img align="right" src="https://spotify-now-playing-js.vercel.app/api/spotify/?background_color=1226b1&border_color=ffffff" alt="Sayak's Spotify Playing" width="350" />](https://open.spotify.com/user/22d73si4irb2tgyla7wseuqwy?si=39a3efd62af34cfe)
-
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=jhonathan93&color=5E33FF&style=plastic" alt="jhonathan93"/>
 </p>
